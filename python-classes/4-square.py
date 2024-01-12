@@ -7,7 +7,12 @@ class Square:
     def __init__(self, size=0):
         @property
         def size(self):
-            '''property to retrieve private instance'''
+            '''property to retrieve private instance attribute'''
+            return self.__size
+
+        @size.setter
+        def size(self, value):
+            '''property to set the attribute'''
             return self.__size
 
         '''adding logic to ensure size must be an integer'''
@@ -15,11 +20,11 @@ class Square:
             raise TypeError("size must be an integer")
         else:
             self.__size = size
-            '''adding logic to ensure size is less than 0'''
+        '''adding logic to ensure size is less than 0'''
         if size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-    '''creating a public instance called area to return area of the square'''
+        '''creating a public instance called area to return area of the square'''
     def area(self):
         return self.__size * self.__size
