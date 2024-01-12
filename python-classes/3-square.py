@@ -16,8 +16,8 @@ class Square:
         else:
             self.__size = size
     '''creating a public instance called area to return area of the square'''
-    def area(self, length, width):
-        self.length = length
-        self.width = width
-        area = length * width
+    def area(self):
+        return self.__size * self.__size
+
+
 
