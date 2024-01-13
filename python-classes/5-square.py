@@ -21,15 +21,18 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    '''creating a public instance called area to return area of the square'''
+        '''creating a public instance called area to return area of the square'''
+
     def area(self):
         return self.__size * self.__size
+
     def my_print(self):
-        """adding logic that sets size equal to 0, otherwise an empty line is printed"""
+        """sets size equal to 0, otherwise an empty line is printed"""
         if self.__size == 0:
             print("")
         else:
             '''prints in stdout the square with the character #'''
             for i in range(self.__size):
                 print("#" * self.__size)
+
 
