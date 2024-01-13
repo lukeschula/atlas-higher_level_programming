@@ -26,3 +26,10 @@ class Square:
         return self.__size * self.__size
     def my_print(self):
         """adding logic that sets size equal to 0, otherwise an empty line is printed"""
+        if self.__size == 0:
+            print("")
+        else:
+            '''prints in stdout the square with the character #'''
+            for i in range(self.__size):
+                print("# * self.__size")
+
