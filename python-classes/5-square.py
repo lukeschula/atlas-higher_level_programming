@@ -31,5 +31,5 @@ class Square:
         else:
             '''prints in stdout the square with the character #'''
             for i in range(self.__size):
-                print("# * self.__size")
+                print("#" * self.__size)
 
