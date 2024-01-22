@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """a class Rectangle that inherits from BaseGeometry"""
 
+
 class BaseGeometry:
     """adding public instance method, that raises an Exception"""
     def area(self):
@@ -15,7 +16,7 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """Instantiation with width and height"""
     def __init__(self, width, height):
-        self.__width = width
-        self.__height = height
         self.integer_validator("width", width)
         self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
