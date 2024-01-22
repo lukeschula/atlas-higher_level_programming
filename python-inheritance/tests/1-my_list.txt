@@ -1,0 +1,22 @@
+>>> MyList = __import__("1-my_list").MyList
+
+Test1: list is empty
+>>> my_list = MyList([])
+>>> my_list.print_sorted()
+[]
+
+Test2: appending list
+>>>my_list.append(3)
+>>>my_list.append(1)
+>>>my_list.append(2)
+[3, 1, 2]
+
+Test3: list has all positive ints
+>>> my_list = MyList([3, 1, 2])
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+Test4: sort list with negative ints
+>>> my_list = MyList([-5, -3, -7])
+>>> my_list.print_sorted()
+[-7, -5, -3]
