@@ -3,7 +3,7 @@
 task based on 8-rectangle.py"""
 
 
-BaseGeometry = __import__('7-rectangle.py').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """class Rectangle to inherit BaseGeometry class"""
 
 
