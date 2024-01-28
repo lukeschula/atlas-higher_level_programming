@@ -2,10 +2,13 @@
 """"almost a circle start"""
 
 
-__nb_objects = 0
 
 class Base:
     """writing the first class, Base"""
+
+    __nb_objects = 0
+
+
     def __init__(self, id=None):
         """class constructor"""
         if id is not None:
