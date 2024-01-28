@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """Rectangle class, adding
     Private instance attributes
@@ -45,5 +46,5 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self,value):
+    def y(self, value):
         self.__y = value
