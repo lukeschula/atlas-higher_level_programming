@@ -90,3 +90,6 @@ class Rectangle(Base):
         if args and len(args) != 0:
             for a in range(len(args)):
                 setattr(self, attributes[a], args[a])
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
