@@ -35,6 +35,6 @@ class Base:
         if list_objs:
             for objects in list_objs:
                 newdict = objects.to_dictionary()
-                result = append(newdict)
+                newlist.append(newdict)
         with open(filename, "w", encoding="utf-8") as f:
-            f.write(cls.to_json_string(result))
+            f.write(cls.to_json_string(newlist))
