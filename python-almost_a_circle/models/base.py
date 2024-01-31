@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """"almost a circle start"""
 
+import json
 
 class Base:
     """writing the first class, Base"""
@@ -22,4 +23,4 @@ class Base:
         if list_dictionaries is None:
             return []
         else:
-            return list_dictionaries
+            return json.dumps(list_dictionaries)
