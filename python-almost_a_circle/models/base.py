@@ -3,6 +3,7 @@
 
 import json
 
+
 class Base:
     """writing the first class, Base"""
 
