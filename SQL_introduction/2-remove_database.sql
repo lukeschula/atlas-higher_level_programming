@@ -1,3 +1,3 @@
 -- Delete hbtn_0c_0 database
 -- Even if database doesn't exist
-DELETE IF DOESNT EXIST hbtn_0c_0;
+DROP DATABASE IF EXISTS hbtn_0c_0;
