@@ -1,19 +1,4 @@
 {
     "python.REPL.enableREPLSmartSend": false,
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "OGMySQLConnection",
-            "database": "mysql",
-            "username": "sqluser",
-            "password": "EnRGrzf(m)YDe%6m"
-        }
-    ]
+    "sqltools.connections": []
 }
