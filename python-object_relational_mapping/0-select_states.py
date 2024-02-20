@@ -13,7 +13,7 @@ if __name__ == '__main__':
     connection = MySQLdb.connect(
         host="localhost", port=3306,
         user=username, passwd=password, db=database,
-        charset="utf-8")
+        charset="utf8")
 
     crsr = connection.cursor()
     crsr.execute("SELECT * FROM states ORDER BY id ASC")
