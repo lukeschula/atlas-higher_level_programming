@@ -22,7 +22,7 @@ if __name__ == "__main__":
                 JOIN states AS st \
                     ON c.state_id = st.id \
                 WHERE st.name = '{}' ORDER BY c.id".format(matchName))
-    q_rows =crsr.fetchall()
+    q_rows = crsr.fetchall()
     complete = 0
     for row in q_rows:
         if complete > 0:
