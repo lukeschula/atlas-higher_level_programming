@@ -18,7 +18,7 @@ if __name__ == "__main__":
         charset="utf8")
     crsr = connection.cursor()
     crsr.execute("SELECT * FROM states WHERE name LIKE binary '{}'"
-                .format(matchName))
+                 .format(matchName))
     q_rows = crsr.fetchall()
     for row in q_rows:
         print(row)
