@@ -16,7 +16,7 @@ if __name__ == "__main__":
         port=3306, user=username,
         passwd=password, db=database,
         charset="utf8")
-    crsr =connection.cursor()
+    crsr = connection.cursor()
     crsr.execute(f"SELECT * FROM states WHERE name LIKE '{matchName}'")
     q_rows = crsr.fetchall()
     for row in q_rows:
