@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     connection = MySQLdb.connect(
         host="localhost",
-        port=3306, username=username,
+        port=3306, user=username,
         passwd=password, db=database,
         charset="utf8")
     crsr = connection.cursor()
