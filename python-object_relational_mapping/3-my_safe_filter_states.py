@@ -17,8 +17,7 @@ if __name__ == "__main__":
         passwd=password, db=database,
         charset="utf8")
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM states WHERE name LIKE '
-                 {matchName}'")
+    crsr.execute(f"SELECT * FROM states WHERE name LIKE '{matchName}'")
     q_rows = crsr.fetchall()
     for row in q_rows:
         print(row)
