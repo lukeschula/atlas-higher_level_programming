@@ -17,7 +17,7 @@ if __name__ == "__main__":
         charset="utf8")
     crsr = connection.cursor()
     crsr.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'")
-    q_rows = cur.fetchall()
+    q_rows = crsr.fetchall()
     for row in q_rows:
         print(row)
     crsr.close()
