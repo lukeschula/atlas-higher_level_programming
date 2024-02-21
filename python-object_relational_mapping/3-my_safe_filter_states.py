@@ -19,7 +19,7 @@ if __name__ == "__main__":
     crsr =connection.cursor()
     crsr.execute(f"SELECT * FROM states WHERE name LIKE '{matchName}'")
     q_rows = crsr.fetchall()
-    for row in q-rows:
+    for row in q_rows:
         print(row)
     crsr.close()
     connection.close()
