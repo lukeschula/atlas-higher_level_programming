@@ -17,7 +17,7 @@ if __name__ == "__main__":
         charset="utf8")
 
     crsr = connection.cursor()
-    cur.execute("SELECT c.id, c.name, st.name \
+    crsr.execute("SELECT c.id, c.name, st.name \
                 FROM cities AS c \
                 JOIN states AS st \
                     ON c.state_id = st.id \
