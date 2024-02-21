@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""displays all values in the states table of hbtn_0e_0_usa where name matches the argument"""
+"""displays all values in the states table of hbtn_0e_0_usa"""
 
 import MySQLdb
 import sys
@@ -17,7 +17,8 @@ if __name__ == "__main__":
         passwd=password, db=database,
         charset="utf8")
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM states WHERE name LIKE '{matchName}'")
+    crsr.execute(f"SELECT * FROM states WHERE name LIKE '
+                 {matchName}'")
     q_rows = crsr.fetchall()
     for row in q_rows:
         print(row)
