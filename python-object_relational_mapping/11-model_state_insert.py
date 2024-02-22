@@ -16,7 +16,7 @@ if __name__ == "__main__":
                         .format(username, password, database),
                         pool_pre_ping=True)
     Base.metadata.create_all(eng)
-    Sesh =sessionmaker(bind=eng)
+    Sesh = sessionmaker(bind=eng)
     session = Sesh()
 
     add_state = State(name='Louisiana')
