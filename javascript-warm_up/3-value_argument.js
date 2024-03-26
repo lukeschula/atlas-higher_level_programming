@@ -1,4 +1,8 @@
 #!/usr/bin/node
 const { argv } = require('process');
-const valArg = '${argv[2]} is ${argv[3]}';
-console.log(valArg);
+
+if (argv[2] === undefinded) {
+  console.log('No argument');
+} else {
+  console.log(argv[2]);
+}
