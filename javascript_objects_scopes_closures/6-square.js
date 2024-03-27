@@ -6,7 +6,7 @@ class Square extends recallSquare {
   charPrint (c) {
     const x = !c ? 'X' : c;
     for (let y = 0; y < this.height; y++) {
-        console.log(x.repeat(this.width));
+      console.log(x.repeat(this.width));
     }
   }
 }
