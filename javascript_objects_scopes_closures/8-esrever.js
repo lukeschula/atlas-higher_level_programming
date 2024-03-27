@@ -5,5 +5,5 @@ exports.esrever = function (list) {
   for (let x = list.length - 1; x >= 0; x--) {
     revList.push(list[x]);
   }
-    return revList;
+  return revList;
 };
