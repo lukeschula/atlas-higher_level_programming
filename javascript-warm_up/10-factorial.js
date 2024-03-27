@@ -13,6 +13,6 @@ function factor (int) {
   }
 }
 
-const num = parseInt(argv[2]);
-const display = factors(num);
+const int = parseInt(argv[2]);
+const display = factor(int);
 console.log(display);
