@@ -7,7 +7,7 @@ const fs =require('fs');
 
 request(Url, function (error, response, body) {
   if (error) {
-    console.error('error:' error);
+    console.error('error:', error);
   } else {
     fs.writeFile(filePath, body, function (err) {
       if (err) throw err;
