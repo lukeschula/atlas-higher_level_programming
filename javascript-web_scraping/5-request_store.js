@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const Url =process.argv[2];
+const Url = process.argv[2];
 const filePath = process.argv[3];
 const request = require('request');
-const fs =require('fs');
+const fs = require('fs');
 
 request(Url, function (error, response, body) {
   if (error) {
@@ -14,4 +14,3 @@ request(Url, function (error, response, body) {
     });
   }
 });
-
