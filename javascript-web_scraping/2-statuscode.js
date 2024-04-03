@@ -1,4 +1,4 @@
-#!/usr/bin/Node
+#!/usr/bin/node
 
 const request = require('request');
 const Url = process.argv[2];
