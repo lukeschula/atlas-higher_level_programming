@@ -8,6 +8,6 @@ request(Url, function (err, display, body) {
   if (err) {
     console.err('error:', error);
   } else {
-    console.log(JAON.parse(body).title);
+    console.log(JSON.parse(body).title);
   }
 });
