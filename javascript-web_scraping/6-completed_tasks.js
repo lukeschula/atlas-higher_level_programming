@@ -13,6 +13,8 @@ request(Url, (error, response) => {
       if (task.completed) {
         if (newTask[task.userId]) {
           newTask[task.userId]++;
+        } else {
+          newTask[task.userId] = 1;
         }
       }
     }
