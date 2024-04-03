@@ -1,4 +1,4 @@
-#!/usr/bin/noede
+#!/usr/bin/node
 
 const episode = process.argv[2];
 const Url = 'https://swapi-api.hbtn.io/api/films/' + episode;
