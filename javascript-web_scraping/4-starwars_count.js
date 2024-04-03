@@ -13,7 +13,7 @@ request(Url, (err, response) => {
     for (const film of data) {
       const characters = film.characters;
       for (const character of characters) {
-        if (character.included(`/${CharaId}/`)) {
+        if (character.includes(`/${CharaId}/`)) {
             count++;
             break;
         }
