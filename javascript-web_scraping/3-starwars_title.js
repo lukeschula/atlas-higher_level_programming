@@ -2,7 +2,7 @@
 
 const episode = process.argv[2];
 const Url = 'https://swapi-api.hbtn.io/api/films/' + episode;
-const request = requrie('request');
+const request = require('request');
 
 request(Url, function (err, display, body) {
   if (err) {
