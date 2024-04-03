@@ -14,8 +14,8 @@ request(Url, (err, response) => {
       const characters = film.characters;
       for (const character of characters) {
         if (character.includes(`/${CharaId}/`)) {
-            count++;
-            break;
+          count++;
+          break;
         }
       }
     }
